@@ -1,0 +1,14 @@
+{
+  "name": "jq-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alex93Bakun <56162141+Alex93Bakun@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "singleQuote": true
+  }
+}
