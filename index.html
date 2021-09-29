@@ -7,6 +7,13 @@
     <title>Title</title>
 </head>
 <body>
+<!--Preloader-->
+<div class='preloader'>
+    <div class='loader'>
+
+    </div>
+</div>
+<!--/Preloader-->
 <!--Header-->
 <header class='header'>
     <div class='container'>
@@ -14,13 +21,16 @@
             <div class='brand-name'>
                 <a href='index.html'>Upvesh.</a>
             </div>
+            <div class='nav-toggle'>
+                <span></span>
+            </div>
             <nav class='nav'>
                 <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Services</a></li>
-                    <li><a href='#'>Works</a></li>
-                    <li><a href='#'>Contact</a></li>
+                    <li><a href='#home'>Home</a></li>
+                    <li><a href='#about'>About</a></li>
+                    <li><a href='#services'>Services</a></li>
+                    <li><a href='#works'>Works</a></li>
+                    <li><a href='#contacts'>Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,7 +38,7 @@
 </header>
 <!--/Header-->
 <!--Home Section-->
-<section class='home-section'>
+<section class='home-section' id='home'>
     <!--shape-->
     <div class='shape-01'></div>
     <div class='container'>
@@ -40,11 +50,11 @@
         </div>
     </div>
     <!--scroll down-->
-    <a href='#' class='scroll-down'><img src='img/icons/arrow-down.svg' alt='arrow-down'></a>
+    <a href='#about' class='scroll-down'><img src='img/icons/arrow-down.svg' alt='arrow-down'></a>
 </section>
 <!--/Home Section-->
 <!--About Section-->
-<section class='about-section'>
+<section class='about-section' id='about'>
     <div class='container'>
         <div class='row'>
             <div class='about-img'>
@@ -96,7 +106,7 @@
 </section>
 <!--/About Section-->
 <!--Service Section-->
-<section class='service-section'>
+<section class='service-section' id='services'>
     <div class='container'>
         <div class='row'>
             <div class='section-title'>
@@ -169,7 +179,7 @@
 </section>
 <!--/Service Section-->
 <!--Work Section-->
-<section class='work-section'>
+<section class='work-section' id='works'>
     <div class='container'>
         <div class='row'>
             <div class='section-title'>
@@ -265,6 +275,106 @@
     </div>
 </section>
 <!--/Work Section-->
+<!--Contact Section-->
+<section class='contact-section' id='contacts'>
+    <div class='container'>
+        <div class='row'>
+            <div class='contact-img'>
+                <div class='img-box'>
+                    <div class='section-title'>
+                        <h1>Contact Me</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='contact-form'>
+                <form class='form'>
+                    <div class='row'>
+                        <div class='left input-group'>
+                            <label for='name'>Name</label>
+                            <input
+                                type='text'
+                                placeholder='Your Name Here'
+                                class='input-control'
+                                id='name'
+                            >
+                        </div>
+                        <div class='right input-group'>
+                            <label for='contact'>Email or Phone</label>
+                            <input
+                                type='text'
+                                placeholder='Your Email or Phone Here'
+                                class='input-control'
+                                id='contact'
+                            >
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='input-group'>
+                            <label for='message'>Message</label>
+                            <textarea
+                                name='message'
+                                id='message'
+                                class='input-control'
+                                placeholder='Your Message Here'
+                            ></textarea>
+                        </div>
+                    </div>
+                    <div class='form-btn'>
+                        <button type='button' class='btn btn-01'>
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='contact-info'>
+                <div class='row'>
+                    <!--info item-->
+                    <div class='info-item'>
+                        <h5>Address</h5>
+                        <p>Sec -123, New Delhi, 121211, India</p>
+                    </div>
+                    <!--info item-->
+                    <!--info item-->
+                    <div class='info-item'>
+                        <h5>Phone</h5>
+                        <p>91 000 000 0000</p>
+                    </div>
+                    <!--info item-->
+                    <!--info item-->
+                    <div class='info-item'>
+                        <h5>Email</h5>
+                        <p>yourmail@gmail.com</p>
+                    </div>
+                    <!--info item-->
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='social-links'>
+                <a href='#' title='facebook'>
+                    <img src='img/icons/facebook.svg' alt='facebook'>
+                </a>
+                <a href='#' title='twitter'>
+                    <img src='img/icons/twitter.svg' alt='twitter'>
+                </a>
+                <a href='#' title='linkedin'>
+                    <img src='img/icons/linkedin.svg' alt='linkedin'>
+                </a>
+                <a href='#' title='instagram'>
+                    <img src='img/icons/instagram.svg' alt='instagram'>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/Contact Section-->
+<!--copyright-->
+<p class='copyright'>Copyright &copy; 2021 SomeOrganization</p>
+<!--/copyright-->
 <!--lightbox-->
 <div class='lightbox'>
     <div class='img-box'>

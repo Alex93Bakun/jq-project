@@ -2,7 +2,50 @@ let index = 0;
 const workItem = $('.work-item');
 const totalWorkItems = workItem.length;
 
+$(window).on('load', function () {
+    $('.preloader').addClass('loaded');
+});
+
 $(document).ready(function () {
+    // nav toggle
+    $('.nav-toggle').click(function () {
+        $('.header .nav').slideToggle();
+    });
+    $('.header .nav a').click(function () {
+        if ($(window).width() < 768) {
+            $('.header .nav').slideToggle();
+        }
+    });
+
+    // Fixed header
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.header').addClass('fixed');
+        } else {
+            $('.header').removeClass('fixed');
+        }
+    });
+
+    // Add smooth scrolling to all links
+    $('a').on('click', function (event) {
+        if (this.hash !== '') {
+            event.preventDefault();
+
+            // Store hash
+            const hash = this.hash;
+
+            $('html, body').animate(
+                {
+                    scrollTop: $(hash).offset().top,
+                },
+                800,
+                function () {
+                    window.location.hash = hash;
+                }
+            );
+        }
+    });
+
     // set lightbox img max height
     const wHeight = $(window).height();
     $('.lightbox-img').css('max-height', wHeight + 'px');
